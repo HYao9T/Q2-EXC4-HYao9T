@@ -2,9 +2,20 @@
 
 
 body{
-	background-color: #d6e6f5;
+	background-color: lightpink;
+	font-family: monaco;
+	color: black;
 }
 
 .container{
-	background-color: #f5f4d6;
+	background-color: powderblue;
+	
+}
+
+.footer{
+	position: fixed;
+	background-color: lavenderblush;
+	text-align: center;
+	width: 100%;
+	bottom: 0;
 }
