@@ -21,30 +21,41 @@
 
 <!-- VERTICAL FORM -->
 
-<div class="container mt-3">
+	<div class="vertical container">
 
-	<h2>Creating Vertical Form Layout</h2>
+		<!-- Alert -->
 
-	<form>
-	    <div class="email mb-3"> <!--div for email-->
-	        <label for="inputEmail">Email</label>
-	        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-	    </div>
+	<div class="alert alert-success alert-dismissable fade show">
+		<strong>DIRECTIONS:</strong>
+		Fill up the form below
+		<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+	</div>
 
-	    <div class="password mb-3"> <!--div for password-->
-	        <label for="inputPassword">Password</label>
-	        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-	    </div>
-	    
-	    <div class="remember mb-3" > <!--div for checkbox-->
-	         <input type="checkbox" id="checkRemember">
-	         <label for="checkRemember">Remember me</label>
-	    </div>
+	<!-- Vertical form layout -->
+	<div class="container mt-3">
 
-	    <button type="submit" class="btn btn-primary">Sign in</button>
-	</form>
+		<h2>Creating Vertical Form Layout</h2>
+
+		<form>
+		    <div class="email mb-3"> <!--div for email-->
+		        <label for="inputEmail">Email</label>
+		        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+		    </div>
+
+		    <div class="password mb-3"> <!--div for password-->
+		        <label for="inputPassword">Password</label>
+		        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+		    </div>
+		    
+		    <div class="remember mb-3" > <!--div for checkbox-->
+		         <input type="checkbox" id="checkRemember">
+		         <label for="checkRemember">Remember me</label>
+		    </div>
+
+		    <button type="submit" class="btn btn-outline-success btn-lg">Sign in</button>
+		</form>
+	</div>
 </div>
-
 
 <!-- HORIZONTAL FORM -->
 
@@ -52,7 +63,8 @@
 	<h2>Creating Horizontal Form Layout</h2>
 
 	<form>
-	    <div class="row email mb-3"> <!--div for email-->
+		<!--div for email-->
+	    <div class="row email mb-3"> 
 	        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
 
 	        <div class="col-sm-10">
@@ -60,14 +72,16 @@
 		     </div>
 	    </div>
 
-	    <div class="row remember password mb-3"> <!--div for password-->
+	    <!--div for password-->
+	    <div class="row remember password mb-3"> 
 	        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
 	        <div class="col-sm-10">
 		        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
 		     </div>
 	    </div>
 	    
-	    <div class="row remember mb-3"> <!--div for checkbox-->
+	    <!--div for checkbox-->
+	    <div class="row remember mb-3">
 	        <div class="offset-sm-2">
 	        	<div class="form-check col-sm-10">
 		            <input class="form-check-input" type="checkbox" id="checkRemember">
@@ -76,10 +90,12 @@
 	        </div>
 	    </div>
 
-	  <div class="row"> <!--div for button-->
-	    <button type="submit" class="btn btn-primary">Sign in</button>
+	  <!--div for button-->
+	  <div class="row">
+	  		<div class="offset-sm-2">
+	   			<button type="submit" class="btn btn-outline-success btn-lg">Sign in</button>
+	   		 </div>
 	   </div>
-
 	</form>
 </div>
 
@@ -89,24 +105,29 @@
 	<h2>Creating Inline Form Layout</h2>
 
 	<form>
-	    <div > <!--div for email-->
-	        <label for="inputEmail">Email</label>
-	        <input type="email" id="inputEmail" placeholder="Email">
-	    </div>
+	    <div class="row align-items-center g-3"> 
 
-	    <div > <!--div for password-->
-	        <label for="inputPassword">Password</label>
-	        <input type="password" id="inputPassword" placeholder="Password">
-	    </div>
+	    	<!--div for email-->
+	    	<div class="col-auto">
+		        <label class="visually-hidden" for="inputEmail">Email</label>
+		        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+		     </div>
+		
+		<!--div for password-->
+	    	<div class="col-auto">
+		        <label class="visually-hidden" for="inputPassword">Password</label>
+		        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+		    </div>
 	    
-	    <div > <!--div for checkbox-->
-	        <div >
-	            <input type="checkbox" id="checkRemember">
-	            <label for="checkRemember">Remember me</label>
+		 <!--div for checkbox-->
+			<div class="col-auto">
+	            <input  class="form-check-input" type="checkbox" id="checkRemember">
+	            <label class="form-check-label" for="checkRemember">Remember me</label>
 	        </div>
-	    </div>
 
-	    <button type="submit" class="btn btn-primary">Sign in</button>
+	    <div class="col-auto">
+		    <button type="submit" class="btn btn-outline-success btn-lg">Sign in</button>
+		  </div>
 	</form>
 </div>
 
